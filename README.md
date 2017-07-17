@@ -6,7 +6,7 @@
 > In the memory of great game "Disciples Dark Prophecy"
 
 About my Quote Machine:
-..* Stylish app, that will give you an "Disciples" atmosphere, also app had cool "dark" soundtrack from the game.
+  * Stylish app, that will give you an "Disciples" atmosphere, also app had cool "dark" soundtrack from the game.
 How I see my app:
 1. Dark background, cool "devil" slide effect, three buttons in "old games" style, random quotes, tweeter, get a quote.
 2. Background music
@@ -18,7 +18,7 @@ Features to add:
 3. Improove quotes structure
 
 How to use:
-..* Download as ZIP, unpack, run EEC_quoteMachine.html
+  * Download as ZIP, unpack, run EEC_quoteMachine.html
 
 > So I like games, I like games with style and gameplay, "Disciples" is an old game, the amazing old game.
 
