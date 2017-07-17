@@ -1,7 +1,8 @@
 # EEC_quoteMachine
 ***
 ## Free Code Camp Practical Task "Quote Machine"
-***
+
+
 > In the memory of great game "Disciples Dark Prophecy"
 
 About my Quote Machine:
