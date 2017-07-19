@@ -89,7 +89,11 @@ function checkButtons(evt){
 	window.open("https://twitter.com/intent/tweet?text="+"Check out my quote mashine! \n "+qm_text.textContent+" \n https://codepen.io/EvilEpicCoder/pen/dRZYBP \n ",'_blank');
 	}else if(x=="Auto slide 10sec"){
 		if(myVal==0){
-		myVal=setInterval(function(){ randomWorld();randomWorld(); }, 10000);
+		myVal=setInterval(function(){ randomWorld();
+									qm_rotate.classList.remove('rotate');
+									qm_flip.classList.remove('flip');
+									//reMove();
+									 }, 10000);
 		}else{
 		clearInterval(myVal);
 		myVal=0;
