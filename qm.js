@@ -14,7 +14,7 @@ var tweet=0;
 var next=0;
 var magik=0;
 var myVal=0;
-var boolActive=false;
+var xBug;
 //debug
 var interations=0;
 
@@ -48,15 +48,17 @@ qm_author.textContent=qAuthor[Math.floor(Math.random() * (8 - 0)) + 0]+qAuthor[M
 	//qm_picture.className = "dsp1";
 	//if(qm_rotate.className =='rotate1'|| qm_flip.className =='flip1')
 	//{
-		var xBug=setInterval(function(){
-		reMove();
-		console.log(xBug);
-		}, 2000);
-	if(xBug!="undefined"){
+		
+	if(xBug==0){
 		qm_rotate.classList.remove('rotate');
 		qm_flip.classList.remove('flip');
 		qm_rotate.classList.add("rotate1");
 		qm_flip.classList.add("flip1");
+	}else{
+		xBug=setInterval(function(){
+		reMove();
+		console.log(xBug);
+		}, 100);
 	}
 	
 	console.log(qm_rotate.classList+"Here");
@@ -90,11 +92,15 @@ function checkButtons(evt){
 	}else if(x=="Auto slide 10sec"){
 		if(myVal==0){
 		myVal=setInterval(function(){ randomWorld();
+									
+									//reMove();
 									qm_rotate.classList.remove('rotate');
 									qm_flip.classList.remove('flip');
-									//reMove();
 									 }, 10000);
 		}else{
+		randomWorld();
+		//qm_rotate.classList.remove('rotate');
+		//qm_flip.classList.remove('flip');
 		clearInterval(myVal);
 		myVal=0;
 		}	
